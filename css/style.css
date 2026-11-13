@@ -1,0 +1,310 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f9dbea, #dceeff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.registro {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #d77da9;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #d77da9;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+
+label {
+    color: #555;
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #e5b8d1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #e69ac0;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #d77da9;
+}
+
+
+
+/* INICIO ESI ACTIVA */
+
+.inicio {
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    margin: auto;
+    background-color: #fff;
+    padding-bottom: 75px;
+}
+
+.encabezado {
+    background-color: hwb(320 56% 0%);
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado h1 {
+    color: hsl(0, 0%, 0%);
+    margin: 0;
+}
+
+.perfil {
+    text-decoration: none;
+    font-size: 25px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.seccion-inicio {
+    padding: 25px 20px;
+}
+
+.opcion {
+    background-color: #f8ddec;
+    margin-bottom: 20px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.opcion h2 {
+    color: #a94f80;
+    margin: 0;
+}
+
+.opcion a,
+.opcion span {
+    background-color: #d77da9;
+    color: white;
+    text-decoration: none;
+    padding: 8px 22px;
+    border-radius: 8px;
+}
+
+.menu-inferior {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+    background-color: #dceeff;
+    display: flex;
+    justify-content: space-around;
+    padding: 18px 5px;
+}
+
+.menu-inferior a {
+    color: #a94f80;
+    text-decoration: none;
+}
+ .menu-inferior a {
+    color: #a94f80;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu-inferior span {
+    font-size: 25px;
+}
+
+.menu-inferior small {
+    font-size: 12px;
+}
+
+.menu-inferior img {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+/* PANTALLA CHATS */
+.pantalla-chats {
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    margin: auto;
+    background-color: white;
+    padding-bottom: 85px;
+}
+
+.contenido-chats {
+    padding: 25px 20px;
+}
+
+.contenido-chats h2 {
+    color: #a94f80;
+    margin-bottom: 10px;
+}
+
+.contenido-chats p {
+    color: #555;
+}
+
+.publicacion {
+    background-color: #f8ddec;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+.publicacion p {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.publicacion button {
+    background-color: #d77da9;
+    color: white;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 8px;
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 25px;
+    color: #a94f80;
+    text-decoration: none;
+}
+.boton-crear {
+    display: block;
+    background-color: #d77da9;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 13px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+
+/* CREAR PUBLICACION */
+.contenido-chats form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.contenido-chats textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e5b8d1;
+    border-radius: 12px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.contenido-chats form button {
+    background-color: #d77da9;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+
+/* PANTALLA LINEA 144 */
+.pantalla-llamada {
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.boton-llamada {
+    background-color: white;
+    border: 2px solid #e5b8d1;
+    border-radius: 50px;
+    padding: 18px 35px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    color: #a94f80;
+}
+
+.telefono {
+    color: red;
+    font-size: 25px;
+}
+
+.estado-llamada {
+    color: #555;
+    font-size: 17px;
+}
+
+.boton-cancelar {
+    background-color: #d77da9;
+    color: white;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 25px;
+}
