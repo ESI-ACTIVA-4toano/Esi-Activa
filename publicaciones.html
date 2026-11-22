@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chats | ESI Activa</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 
@@ -13,49 +13,62 @@
 
         <header class="encabezado">
             <h1>ESI ACTIVA</h1>
-            <a href="registro.html" class="perfil">👤</a>
+            <a href="/registro" class="perfil">👤</a>
         </header>
 
         <section class="contenido-chats">
+
             <h2>Chats</h2>
             <p>Un espacio para compartir dudas y opiniones.</p>
 
+            <!-- Formulario para crear publicaciones -->
             <div class="publicacion">
-                <p>¿Cómo puedo hablar con mi familia sobre la ESI?</p>
-                <button type="button">Responder</button>
+                <form action="/publicar" method="POST">
+                    <label for="pregunta">Compartí tu duda o publicación:</label>
+
+                    <textarea
+                        id="pregunta"
+                        name="pregunta"
+                        rows="4"
+                        placeholder="¿Qué querés compartir?"
+                        required
+                    ></textarea>
+
+                    <button type="submit">Publicar</button>
+                </form>
             </div>
 
-            <div class="publicacion">
-                <p>¿Dónde puedo encontrar información sobre mis derechos?</p>
-                <button type="button">Responder</button>
-            </div>
+            <!-- Publicaciones guardadas en MySQL -->
+            <h2>Publicaciones</h2>
 
-            <div class="publicacion">
-                <p>¿Por qué es importante el respeto y la igualdad?</p>
-                <button type="button">Responder</button>
-                <a href="crear-publicacion.html" class="boton-crear">
-    + Crear publicación
-</a>
-            </div>
+            {% for consulta in consultas %}
+                <div class="publicacion">
+                    <p>{{ consulta[1] }}</p>
+                    <small>{{ consulta[2] }}</small>
+                </div>
+            {% else %}
+                <p>Todavía no hay publicaciones.</p>
+            {% endfor %}
 
-            
         </section>
 
         <nav class="menu-inferior">
-            <a href="inicio.html">
+
+            <a href="/inicio">
                 <span>⌂</span>
                 <small>Inicio</small>
             </a>
 
-            <a href="#">
+            <a href="/mapa">
                 <span>📍</span>
                 <small>Ubicación</small>
             </a>
 
-            <a href="publicaciones.html">
-                <img src="https://cdn-icons-png.flaticon.com/512/3906/3906159.png" alt="Chats">
+            <a href="/">
+                <span>💬</span>
                 <small>Chats</small>
             </a>
+
         </nav>
 
     </main>
