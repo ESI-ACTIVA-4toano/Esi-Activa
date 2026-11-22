@@ -73,6 +73,11 @@ button:hover {
     background-color: #d77da9;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/main
 /* INICIO ESI ACTIVA */
 
 .inicio {
@@ -149,6 +154,13 @@ button:hover {
 .menu-inferior a {
     color: #a94f80;
     text-decoration: none;
+<<<<<<< HEAD
+=======
+}
+ .menu-inferior a {
+    color: #a94f80;
+    text-decoration: none;
+>>>>>>> origin/main
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,8 +180,14 @@ button:hover {
     height: 25px;
 }
 
+<<<<<<< HEAD
 /* PANTALLA CHATS */
 
+=======
+
+
+/* PANTALLA CHATS */
+>>>>>>> origin/main
 .pantalla-chats {
     width: 100%;
     max-width: 500px;
@@ -218,9 +236,12 @@ button:hover {
     color: #a94f80;
     text-decoration: none;
 }
+<<<<<<< HEAD
 
 /* CREAR PUBLICACION */
 
+=======
+>>>>>>> origin/main
 .boton-crear {
     display: block;
     background-color: #d77da9;
@@ -232,6 +253,11 @@ button:hover {
     margin-top: 25px;
 }
 
+<<<<<<< HEAD
+=======
+
+/* CREAR PUBLICACION */
+>>>>>>> origin/main
 .contenido-chats form {
     display: flex;
     flex-direction: column;
@@ -258,8 +284,14 @@ button:hover {
     font-size: 16px;
 }
 
+<<<<<<< HEAD
 /* PANTALLA LINEA 144 */
 
+=======
+
+
+/* PANTALLA LINEA 144 */
+>>>>>>> origin/main
 .pantalla-llamada {
     width: 100%;
     max-width: 500px;
